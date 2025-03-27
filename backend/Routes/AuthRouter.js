@@ -8,9 +8,7 @@ router.post('/login' ,loginValidation , login )
 
 router.post('/signup' ,signupValidation , signup)
 
-router.post('/logout' , (req , res) => {
-    res.send("logout success");
-})
+router.post('/logout' )
 
 
 export default router;

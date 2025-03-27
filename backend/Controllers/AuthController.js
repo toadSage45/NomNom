@@ -53,7 +53,7 @@ const login = async (req, res) => {
             })
         }
         const isPassEqual  = await bcrypt.compare(password , user.password);
-        console.log(isPassEqual);
+
         if(!isPassEqual){
             return res.status(403)
             .json({
@@ -86,4 +86,5 @@ const login = async (req, res) => {
     }
 }
 
-export { signup, login };
+
+export { signup, login  };
